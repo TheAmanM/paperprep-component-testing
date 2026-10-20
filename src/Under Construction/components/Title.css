@@ -1,0 +1,22 @@
+.title-text {
+    /* margin: 1.5rem 0; */
+    user-select: none;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 100%;
+    color: var(--secondary-color);
+}
+
+span.blue-text {
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 3rem;
+    }
+}

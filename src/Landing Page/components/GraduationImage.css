@@ -1,0 +1,35 @@
+.graduation-image {
+    /* flex-grow: 1; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* padding: 2rem 1.5rem; */
+    height: 100%;
+    /* width: 80%; */
+
+    
+    /* padding: 0rem 0rem; */
+
+}
+
+svg.hat-icon {
+    /* flex: 1 1; */
+    /* width: calc(1.66 * 80%); */
+    /* width: 60%; */
+    margin: 0 auto;
+    width: 100vw;
+    /* object-fit: cover; */
+}
+
+@media screen and (min-width: 860px) {
+    .graduation-image {
+        width: 100%;
+    }
+    
+    svg.hat-icon {
+        height: 100%;
+        width: 100%;
+    }
+}

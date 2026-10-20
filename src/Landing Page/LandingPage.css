@@ -1,0 +1,59 @@
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+    position: relative;
+}
+
+.margin {
+    padding: 3rem 24px 0px;
+}
+
+.blue-text {
+    color: var(--primary-color);
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.max {
+    display: none;
+}
+
+.max2 {
+    display: none;
+}
+
+@media screen and (min-width: 860px) {
+    .margin {
+        margin: 0;
+        padding: 0;
+        height: fit-content;
+    }
+
+    h1, .feature-text {
+        text-align: start;
+    }
+
+    .max {
+        display: block;
+        flex: 1;
+    }
+
+    .max2 {
+        display: block;
+        flex: 2;
+    }
+
+    .grid {
+        padding: 4rem 4rem;
+        display: grid;
+        /* flex-direction: row; */
+        /* height: fit-content ; */
+        grid-template-columns: 1fr 1fr;
+    }
+}

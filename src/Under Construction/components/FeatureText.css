@@ -1,0 +1,18 @@
+.feature-text {
+    color: var(--body-text);
+    text-align: center;
+    margin: 4rem 0;
+    user-select: none;
+}
+
+span.blue-text {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 480px) {
+    .feature-text {
+        font-size: 0.75rem;
+        margin: 3rem 0;
+    }
+}

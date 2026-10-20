@@ -1,0 +1,84 @@
+:root {
+    --image-animation-curve: cubic-bezier(0.9, -0.1, 0.1, 1.1);
+    --image-animation-time: 700ms;
+    /* --image-animation-time: 2s; */
+}
+
+.bg {
+    background-color: var(--secondary-color);
+    height: 100vh;
+}
+
+.image-container {
+    position: relative;
+    width: 640px;
+    height: 360px;
+
+    margin-inline: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+img {
+    position: absolute;
+    width: 640px;
+    height: 360px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+    user-select: none;
+}
+
+.top-img {
+    animation: image-animation var(--image-animation-time) var(--image-animation-curve) forwards;
+}
+
+.image-container:hover .top-img {
+    animation: image-animation-hover var(--image-animation-time) var(--image-animation-curve);
+}
+
+@keyframes image-animation {
+    from {
+        clip-path: inset(0px 0px 0px 0px);
+    }
+
+    to {
+        clip-path: inset(0px 0px 0px 100%);
+    }
+}
+
+@keyframes image-animation-hover {
+    from {
+        clip-path: inset(0px 100% 0px 0px);
+    }
+
+    to {
+        clip-path: inset(0px 0px 0px 0px);
+    }
+}
+
+/* .top-img {
+
+}
+
+.image-container:hover .top-img {
+    animation: image-animation var(--image-animation-time) var(--image-animation-curve);
+}
+
+@keyframes image-animation {
+    0% {
+        clip-path: inset(0px 0px 0px 0px);
+    }
+
+    50% {
+        clip-path: inset(0px 0px 0px 100%);
+    }
+
+    50% {
+        clip-path: inset(0px 100% 0px 0px);
+    }
+
+    100% {
+        clip-path: inset(0px 0px 0px 0px);
+    }
+} */

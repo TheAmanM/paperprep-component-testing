@@ -1,0 +1,25 @@
+.feature-text {
+    text-align: center;
+    margin: 2.5rem 0 1rem;
+    color: var(--body-text);
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+span.blue-text {
+    font-weight: 900;
+}
+
+@media screen and (min-width: 660px) {
+    .feature-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1284px) {
+    .feature-text {
+        font-size: 1.5rem;
+    }
+}

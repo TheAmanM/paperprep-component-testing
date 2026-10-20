@@ -1,0 +1,86 @@
+.email-capture {
+    padding: 1rem 0;
+    background-color: var(--secondary-color);
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 400;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+    height: 28px;
+}
+
+input {
+    background-color: var(--white);
+    border-radius: 3.6px 0 0 3.6px;
+    width: 60vw;
+    color: var(--secondary-color);
+
+    padding: 0 0.5rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    border-radius: 0 3.6px 3.6px 0;
+    color: var(--white);
+    font-weight: 700;
+
+    padding: 0.25rem 0.75rem;
+
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.capture {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 0;
+}
+
+button:hover {
+    background-color: var(--primary-accent);
+}
+
+button:active {
+    background-color: var(--primary-tertiary);
+    transition: all 100ms;
+}
+
+button.loading-button,
+button.loading-button:hover,
+button.loading-button:active {
+    background-color: grey;
+}
+
+@media screen and (min-width: 860px) {
+
+    input,
+    button {
+        height: 32px;
+    }
+
+    button {
+        padding: 0.25rem 1rem;
+        border-radius: 0 6.4px 6.4px 0;
+    }
+
+    button.loading-button,
+    button.loading-button:hover,
+    button.loading-button:active {
+        background-color: grey;
+    }
+
+    input {
+        border-radius: 6.4px 0 0 6.4px;
+    }
+}
